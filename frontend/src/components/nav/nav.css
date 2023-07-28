@@ -1,0 +1,63 @@
+.nav{
+    background-color: rgb(20, 20, 20);
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 3px 30px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title .logo img{
+    width:40px;
+    margin-right: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info .logoImage{
+   width:50px;
+   border-radius: 50%;
+}
+
+ .btn{
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.btn:hover{
+    background-color: purple;
+    color: white;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width : 540px){
+    .info h3{
+        display: none;
+    }
+    .info .logoImage{
+        width:40px;
+    }
+    .btn{
+        padding: 8px 12px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+}
